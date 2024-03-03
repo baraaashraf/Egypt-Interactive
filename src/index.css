@@ -30,8 +30,21 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-around;
   background-color: #c64c53;
+}
+.nav-ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+.nav-li a{
+  color: #f6ebd1;
+  text-decoration: none;
+}
+.list{
+  width: 30%;
 }
 .masr-text {
   font-size: 48px;
@@ -55,8 +68,7 @@ body {
   stroke-linecap: round;
   stroke-linejoin: round;
 }
-.st0:hover,
-:active {
+.st0:hover {
   fill: #b4d5a8;
   stroke: #c64c53;
   stroke-width: 0.5;
@@ -70,6 +82,23 @@ body {
   text-align: right;
   border-radius: 15px;
 }
+
+.active-gov {
+  fill: #b4d5a8;
+  stroke: #c64c53;
+  stroke-width: 0.6;
+}
+.inactive-gov {
+  fill: #f6ebd1;
+  stroke: #c64c53;
+  stroke-width: 0.2;
+}
+.inactive-gov:hover{
+  fill: #b4d5a8;
+  stroke: #c64c53;
+}
+
+/*------------------------------------------------------------------------------*/
 
 @media screen and (min-width: 720px) {
   .container {

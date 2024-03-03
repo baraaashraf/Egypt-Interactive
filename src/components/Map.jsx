@@ -32,6 +32,7 @@ const Map = ({ onClicker }) => {
                 }}
               >
                 <path
+                  className={selectedItem === 1 ? "active-gov" : "inactive-gov"}
                   class="st0"
                   d="M571.985,55.967l0.511,1.589l1.96,6.128l1.569,4.897l1.909,5.055l2.537,6.733l3.067,8.113l1.086,4.601
   l0.108,2.39l0.299,0.983l0.792,1.087l0.494,0.714l-0.01,0.785l-0.473,1.725l-0.087,1.015l0.108,0.665l0.345,0.543l2.717,2.389
@@ -59,8 +60,16 @@ const Map = ({ onClicker }) => {
   l-6,3.235l-1.053,0.885l0.583-0.892l1.159-0.568l0.964-0.526l0.616-0.362l0.664-0.49l2.593-1.206L513.751,55.054z"
                 />
               </a>
-              <a href="#" xlinkTitle="أسوان" onClick={() => onClicker("2")}>
+              <a
+                href="#"
+                xlinkTitle="أسوان"
+                onClick={() => {
+                  onClicker("2");
+                  setSelectedItem(2);
+                }}
+              >
                 <path
+                  className={selectedItem === 2 ? "active-gov" : "inactive-gov"}
                   class="st0"
                   d="M434.897,569.945l-2.949,0.002l1.59-4.768l1.153-3.444l0.062-1.344l-0.443-1.195l-1.096-1.078l-0.916-0.467
   l-0.957-0.15l-0.957,0.172l-0.931,0.5l-1.286,1.417l-2.246,4.613l-0.01-0.022l-0.072-0.162l-0.365-0.585l-0.494-0.533l-2.194-1.604
@@ -103,9 +112,13 @@ const Map = ({ onClicker }) => {
               <a
                 href="#"
                 xlinkTitle="الوادي الجديد"
-                onClick={() => onClicker("20")}
+                onClick={() => {
+                  onClicker("20");
+                  setSelectedItem(3);
+                }}
               >
                 <path
+                  className={selectedItem === 3 ? "active-gov" : "inactive-gov"}
                   class="st0"
                   d="M425.919,564.204l-0.172,0.353l-2.454,5.046L422.634,570h-1.906h-4.839l-4.847-0.003l-4.85-0.003h-4.849
   h-4.842h-4.847h-4.847h-4.842l-4.842-0.003h-4.847h-4.855h-4.839h-4.847l-4.842-0.003l-4.842-0.003h-4.847h-4.847h-4.847
@@ -144,9 +157,13 @@ const Map = ({ onClicker }) => {
               <a
                 href="#"
                 xlinkTitle="البحر الأحمر"
-                onClick={() => onClicker("25")}
+                onClick={() => {
+                  onClicker("25");
+                  setSelectedItem(4);
+                }}
               >
                 <path
+                  className={selectedItem === 4 ? "active-gov" : "inactive-gov"}
                   class="st0"
                   d="M486.165,569.945h-4.055h-5.094h-5.099h-5.094h-5.099h-5.094h-5.099h-5.094h-5.099h-5.094l-1.347,0.001
   l0.004-0.015l0.067-0.24l1.405-2.702l1.122-1.319l1.127-0.876l1.088-0.662l10.314-4.85l0.579-0.456l0.852-1.098l0.671-1.195
@@ -227,8 +244,16 @@ const Map = ({ onClicker }) => {
                 />
               </a>
 
-              <a href="#" xlinkTitle="مطروح" onClick={() => onClicker("17")}>
+              <a
+                href="#"
+                xlinkTitle="مطروح"
+                onClick={() => {
+                  onClicker("17");
+                  setSelectedItem(5);
+                }}
+              >
                 <path
+                  className={selectedItem === 5 ? "active-gov" : "inactive-gov"}
                   class="st0"
                   d="M110.626,234.439v-22.324v-22.623v-9.546v-7.035l-0.345-3.284l-0.88-3.067l-4.127-10.035l-0.494-1.977
   l-0.113-2.211l0.448-4.147l0.005-1.394l-0.72-2.357l-2.552-4.317l-0.334-2.388l0.834-2.992l0.062-1.139l-0.226-1.291l-4.286-10.776
@@ -252,8 +277,16 @@ const Map = ({ onClicker }) => {
                 />
               </a>
 
-              <a href="#" xlinkTitle="السويس" onClick={() => onClicker("23")}>
+              <a
+                href="#"
+                xlinkTitle="السويس"
+                onClick={() => {
+                  onClicker("23");
+                  setSelectedItem(6);
+                }}
+              >
                 <path
+                  className={selectedItem === 6 ? "active-gov" : "inactive-gov"}
                   class="st0"
                   d="M492.5,138.1l-0.166-0.264l-1.143-1.184l-1.045-0.511l0.251-0.558l0.519-0.532l0.276-0.182l-0.008-1.602
   l-0.64-1.119l-2.038-2.019l0.442-0.294l0.195-0.269l-0.04-0.271l-0.284-0.309l0.284-0.105l0.097-0.105l-0.097-0.108l-0.284-0.108
@@ -273,9 +306,13 @@ const Map = ({ onClicker }) => {
               <a
                 href="#"
                 xlinkTitle="جنوب سيناء"
-                onClick={() => onClicker("27")}
+                onClick={() => {
+                  onClicker("27");
+                  setSelectedItem(7);
+                }}
               >
                 <path
+                  className={selectedItem === 7 ? "active-gov" : "inactive-gov"}
                   class="st0"
                   d="M603.706,155.314l-0.506,0.268l-0.421,0.321l-0.357,0.403l-0.357,0.535l-0.276,0.668l-0.162,0.589
   l-0.279,0.451l-0.636,0.247l0.174,0.051l0.142,0.005l0.077,0.084l-0.024,0.288l-0.425,0.214l-0.328,0.298l-0.122,0.33l0.194,0.326
@@ -321,8 +358,16 @@ const Map = ({ onClicker }) => {
                 />
               </a>
 
-              <a href="#" xlinkTitle="بورسعيد" onClick={() => onClicker("22")}>
+              <a
+                href="#"
+                xlinkTitle="بورسعيد"
+                onClick={() => {
+                  onClicker("22");
+                  setSelectedItem(8);
+                }}
+              >
                 <path
+                  className={selectedItem === 8 ? "active-gov" : "inactive-gov"}
                   class="st0"
                   d="M472.827,51.462l2.184,0.429l0.665,0.51h0.312l0.563,0.073l0.121,0.974l0.519,0.746l0.741,0.49l1.531,0.405
   l0.571,0.547l0.936,1.208l2.115,2.055l0.924,0.708l1.41,2.44l1.309,1.181l1.487,0.934l1.692,0.525l-0.007,0.065l0.126,5.034
@@ -331,8 +376,16 @@ const Map = ({ onClicker }) => {
                 />
               </a>
 
-              <a href="#" xlinkTitle="الدقهلية" onClick={() => onClicker("11")}>
+              <a
+                href="#"
+                xlinkTitle="الدقهلية"
+                onClick={() => {
+                  onClicker("11");
+                  setSelectedItem(9);
+                }}
+              >
                 <path
+                  className={selectedItem === 9 ? "active-gov" : "inactive-gov"}
                   class="st0"
                   d="M472.82,52.195l-0.483-0.176l-1.017-0.164l-0.608,0.22l-0.353-0.979l0.62,0.076l0.656,0.052l1.191,0.237
   l-0.007,0.409v0.314V52.195z M449.843,52.109l0.073-0.033l-0.097-0.102l-0.065-0.026l-0.065-0.057l-0.081-0.213l0.705,0.299
@@ -373,8 +426,18 @@ const Map = ({ onClicker }) => {
                 />
               </a>
 
-              <a href="#" xlinkTitle="الشرقية" onClick={() => onClicker("26")}>
+              <a
+                href="#"
+                xlinkTitle="الشرقية"
+                onClick={() => {
+                  onClicker("26");
+                  setSelectedItem(10);
+                }}
+              >
                 <path
+                  className={
+                    selectedItem === 10 ? "active-gov" : "inactive-gov"
+                  }
                   class="st0"
                   d="M467.113,63.185l-0.173-0.347l0.794-0.028l0.255,0.028v-0.433l-0.223-0.057l-0.045-0.045l0.012-0.085
         l-0.073-0.151L467.734,62l0.596-0.388l0.028,0.353l0.142,0.071l0.223-0.026l0.288,0.038l-0.195-0.634L469.205,61l0.547-0.05
@@ -402,9 +465,15 @@ const Map = ({ onClicker }) => {
               <a
                 href="#"
                 xlinkTitle="الإسماعيلية"
-                onClick={() => onClicker("10")}
+                onClick={() => {
+                  onClicker("10");
+                  setSelectedItem(11);
+                }}
               >
                 <path
+                  className={
+                    selectedItem === 11 ? "active-gov" : "inactive-gov"
+                  }
                   class="st0"
                   d="M467.15,63.597l0.187,0.035l-0.224-0.448l0.013-0.003l4.301-0.493l1.79-0.413l1.272-0.628l1.057-0.29
   l14.479,8.428l2.038,20.103l0.108,5.14l0.162,1.186l0.177,0.773l0.1,0.227v0.009l4.566,7.34l2.634,6.854l-9.455-0.669l-1.562,0.137
@@ -417,8 +486,18 @@ const Map = ({ onClicker }) => {
                 />
               </a>
 
-              <a href="#" xlinkTitle="دمياط" onClick={() => onClicker("7")}>
+              <a
+                href="#"
+                xlinkTitle="دمياط"
+                onClick={() => {
+                  onClicker("7");
+                  setSelectedItem(12);
+                }}
+              >
                 <path
+                  className={
+                    selectedItem === 12 ? "active-gov" : "inactive-gov"
+                  }
                   class="st0"
                   d="M464.18,47.37l-0.319-0.111l-1.021-0.114l-0.227-0.209l-0.13-0.266l-0.243-0.242l-1.325-0.721l-0.535-0.456
         l-0.207,0.021h-0.373l-0.15-0.79l-0.312-0.691l-0.405-0.556l-0.462-0.387h0.648l0.608-0.076l-2.508-3.142l-0.535-0.941
@@ -445,9 +524,15 @@ const Map = ({ onClicker }) => {
               <a
                 href="#"
                 xlinkTitle="كفر الشيخ"
-                onClick={() => onClicker("15")}
+                onClick={() => {
+                  onClicker("15");
+                  setSelectedItem(13);
+                }}
               >
                 <path
+                  className={
+                    selectedItem === 13 ? "active-gov" : "inactive-gov"
+                  }
                   class="st0"
                   d="M380.31,42.438l-1.376-1.052l-0.741-1.722l0.32-1.029l1.815,1.026l1.345,1.024l1.531,0.636l1.799,0.204
         l2.155-0.271l7.005-1.886l14.804-5.291v0.4l-0.754,0.107l-4.598,1.74l-3.849,2.217l-2.638,1.262l-2.127,1.451l-0.28,0.131
@@ -476,8 +561,18 @@ const Map = ({ onClicker }) => {
                 />
               </a>
 
-              <a href="#" xlinkTitle="البحيرة" onClick={() => onClicker("4")}>
+              <a
+                href="#"
+                xlinkTitle="البحيرة"
+                onClick={() => {
+                  onClicker("4");
+                  setSelectedItem(14);
+                }}
+              >
                 <path
+                  className={
+                    selectedItem === 14 ? "active-gov" : "inactive-gov"
+                  }
                   class="st0"
                   d="M365.386,51.704l1.868,0.571l1.823,0.199l-0.409,0.258l-0.563,0.649l-0.417,0.246l-0.032,0.294l0.073,0.085
         l0.154,0.002l0.174,0.054l-0.596,0.4l0.178,0.452l0.543,0.426l0.527,0.313l2.07-1.232l-0.255,0.666l0.275,0.327l0.43,0.088
@@ -508,9 +603,15 @@ const Map = ({ onClicker }) => {
               <a
                 href="#"
                 xlinkTitle="الإسكندرية"
-                onClick={() => onClicker("1")}
+                onClick={() => {
+                  onClicker("1");
+                  setSelectedItem(15);
+                }}
               >
                 <path
+                  className={
+                    selectedItem === 15 ? "active-gov" : "inactive-gov"
+                  }
                   class="st0"
                   d="M340.473,67.709l0.284-0.147l0.361-0.574l0.381-0.428l7.333-5.364l0.774-1.534l1.386,0.327l1.446-0.686
   l2.301-2.06l-0.446-0.661l-0.19,0.043l-0.413,0.22l0.28-0.59l0.389-0.412l0.389-0.012l0.304,0.616h0.365l0.571-0.635l2.318-2.094
@@ -523,8 +624,18 @@ const Map = ({ onClicker }) => {
                 />
               </a>
 
-              <a href="#" xlinkTitle="القاهرة" onClick={() => onClicker("6")}>
+              <a
+                href="#"
+                xlinkTitle="القاهرة"
+                onClick={() => {
+                  onClicker("6");
+                  setSelectedItem(16);
+                }}
+              >
                 <path
+                  className={
+                    selectedItem === 16 ? "active-gov" : "inactive-gov"
+                  }
                   class="st0"
                   d="M454.443,112.669l0.062,3.279l1.304,5.613l1.075,11.806l-0.371,5.127l-31.729,1.337l-0.404-0.736l0.347-0.676
         l0.319-1.207l-0.008-2.175l-0.394-2.391l-0.625-2.168l-0.702-1.498l-1.271-1.476l-0.545-0.86l-0.224-1.053l0.818-6.15l3.414-1.291
@@ -534,8 +645,18 @@ const Map = ({ onClicker }) => {
                 />
               </a>
 
-              <a href="#" xlinkTitle="الجيزة" onClick={() => onClicker("9")}>
+              <a
+                href="#"
+                xlinkTitle="الجيزة"
+                onClick={() => {
+                  onClicker("9");
+                  setSelectedItem(17);
+                }}
+              >
                 <path
+                  className={
+                    selectedItem === 17 ? "active-gov" : "inactive-gov"
+                  }
                   class="st0"
                   d="M347.998,196.928l-8.073,21.25l-6.329,8.391l-7.538,5.626l-23.02,12.161l-3.548,2.685l-2.496,3.768
   l-3.561,7.781h-66.136l21.523-46.024l1.369-2.098l2.354-2.601l3.702-1.497l39.475-10.34l10.049-7.604l32.339-32.732l38.734-23.805
@@ -551,8 +672,18 @@ const Map = ({ onClicker }) => {
                 />
               </a>
 
-              <a href="#" xlinkTitle="المنيا" onClick={() => onClicker("19")}>
+              <a
+                href="#"
+                xlinkTitle="المنيا"
+                onClick={() => {
+                  onClicker("19");
+                  setSelectedItem(18);
+                }}
+              >
                 <path
+                  className={
+                    selectedItem === 18 ? "active-gov" : "inactive-gov"
+                  }
                   class="st0"
                   d="M293.434,258.591l3.561-7.781l2.496-3.768l3.548-2.685l23.02-12.161l7.538-5.626l6.329-8.391l8.073-21.25
         l50.754-1.23l0.888,0.958l7.849,2.749l-1.585,13.827l-0.255,1.181l-0.293,0.651l-2.426,4.161l-1.436,3.765l-0.301,1.285
@@ -562,8 +693,18 @@ const Map = ({ onClicker }) => {
                 />
               </a>
 
-              <a href="#" xlinkTitle="الفيوم" onClick={() => onClicker("12")}>
+              <a
+                href="#"
+                xlinkTitle="الفيوم"
+                onClick={() => {
+                  onClicker("12");
+                  setSelectedItem(19);
+                }}
+              >
                 <path
+                  className={
+                    selectedItem === 19 ? "active-gov" : "inactive-gov"
+                  }
                   class="st0"
                   d="M415.338,160.424l-1.994,2.012l-1.924,3.805l-2.038,2.23l-0.913,1.791l-1.574,2.385l-3.383,3.727l-4.188,2.179
   l-20.733,5.844l-2.357,0.2l-3.316-2.384l-21.652-4.004l23.237-22.639l3.653-2.94l9.025-5.377l10.443-4.809l10.445-1.307
@@ -571,8 +712,18 @@ const Map = ({ onClicker }) => {
                 />
               </a>
 
-              <a href="#" xlinkTitle="بني سويف" onClick={() => onClicker("5")}>
+              <a
+                href="#"
+                xlinkTitle="بني سويف"
+                onClick={() => {
+                  onClicker("5");
+                  setSelectedItem(20);
+                }}
+              >
                 <path
+                  className={
+                    selectedItem === 20 ? "active-gov" : "inactive-gov"
+                  }
                   class="st0"
                   d="M351.265,178.208l21.652,4.004l3.316,2.384l2.357-0.2l20.733-5.844l4.188-2.179l3.383-3.727l1.574-2.385
   l0.913-1.791l2.038-2.23l1.924-3.805l1.994-2.012l2.241-0.064l1.281,0.189l1.482,0.459l0.743,0.376l0.448,0.306l0.424,0.366
@@ -582,8 +733,18 @@ const Map = ({ onClicker }) => {
                 />
               </a>
 
-              <a href="#" xlinkTitle="المنوفية" onClick={() => onClicker("18")}>
+              <a
+                href="#"
+                xlinkTitle="المنوفية"
+                onClick={() => {
+                  onClicker("18");
+                  setSelectedItem(21);
+                }}
+              >
                 <path
+                  className={
+                    selectedItem === 21 ? "active-gov" : "inactive-gov"
+                  }
                   class="st0"
                   d="M417.507,115.948l-0.774-0.446l-0.584-0.341l-1.232-1.018l-0.594-0.29l-0.677-0.564l-0.401-0.13l-0.437,0.116
         l-0.69,0.543l-0.388,0.164l-1.019-0.013l-0.88-0.32l-0.617-0.602l-0.232-0.853l-0.057-1.291l-0.154-0.602l-0.316-0.255
@@ -607,9 +768,15 @@ const Map = ({ onClicker }) => {
               <a
                 href="#"
                 xlinkTitle="القليوبية"
-                onClick={() => onClicker("23")}
+                onClick={() => {
+                  onClicker("23");
+                  setSelectedItem(22);
+                }}
               >
                 <path
+                  className={
+                    selectedItem === 22 ? "active-gov" : "inactive-gov"
+                  }
                   class="st0"
                   d="M439.833,115.084l-7.646,0.345l-2.457,0.457l-1.099,0.494l-0.309,0.21l-0.587,0.263l-0.301,0.062l-0.224-0.031
         l-0.193-0.125l-0.316-0.156l-0.193-0.031l-0.147,0.04l-0.085,0.098l-0.062,0.165l-0.1,0.466l-0.087,0.241l-0.098,0.19l-0.124,0.149
@@ -625,8 +792,18 @@ const Map = ({ onClicker }) => {
                 />
               </a>
 
-              <a href="#" xlinkTitle="الغربية" onClick={() => onClicker("8")}>
+              <a
+                href="#"
+                xlinkTitle="الغربية"
+                onClick={() => {
+                  onClicker("8");
+                  setSelectedItem(23);
+                }}
+              >
                 <path
+                  className={
+                    selectedItem === 23 ? "active-gov" : "inactive-gov"
+                  }
                   class="st0"
                   d="M422.773,93.464l-1.07-0.693l-0.386-0.68l-1.042-0.959l-0.412-0.302l-0.224-0.427l-0.108-0.411l-0.324-0.314
         l-0.371-0.254l-0.71-0.386l-0.61-0.218l-1.755-0.214l-0.733,0.145l-0.265,0.019l-0.124-0.191l-0.154-0.347l-1.019-1.715
@@ -650,8 +827,18 @@ const Map = ({ onClicker }) => {
                 />
               </a>
 
-              <a href="#" xlinkTitle="سوهاج" onClick={() => onClicker("14")}>
+              <a
+                href="#"
+                xlinkTitle="سوهاج"
+                onClick={() => {
+                  onClicker("14");
+                  setSelectedItem(24);
+                }}
+              >
                 <path
+                  className={
+                    selectedItem === 24 ? "active-gov" : "inactive-gov"
+                  }
                   class="st0"
                   d="M457.68,343.901l-20.828-26.159l-4.734-4.059l-6.915-8.582l4.636-2.516l0.556-0.446l0.471-0.472l0.332-0.457
         l0.332-0.574l0.496-0.684l0.386-0.378l0.309-0.19l0.548-0.017l0.633,0.268l0.867,0.825l0.401,0.486l0.363,0.632l0.787,1.774
@@ -663,8 +850,18 @@ const Map = ({ onClicker }) => {
                 />
               </a>
 
-              <a href="#" xlinkTitle="قنا" onClick={() => onClicker("24")}>
+              <a
+                href="#"
+                xlinkTitle="قنا"
+                onClick={() => {
+                  onClicker("24");
+                  setSelectedItem(25);
+                }}
+              >
                 <path
+                  className={
+                    selectedItem === 25 ? "active-gov" : "inactive-gov"
+                  }
                   class="st0"
                   d="M457.68,343.901l1.955-1.829l0.54-0.355l0.525-0.268l2.851-0.364l0.756-0.241l0.62-0.396l1.142-1.454
         l0.278-0.244l0.533-0.228l0.602,0.106l0.628,0.631l1.467,2.462l0.99,1.128l1.073,0.861l1.181,0.643l0.674,0.027l0.525-0.052
@@ -682,8 +879,18 @@ const Map = ({ onClicker }) => {
                 />
               </a>
 
-              <a href="#" xlinkTitle="أسيوط" onClick={() => onClicker("3")}>
+              <a
+                href="#"
+                xlinkTitle="أسيوط"
+                onClick={() => {
+                  onClicker("3");
+                  setSelectedItem(26);
+                }}
+              >
                 <path
+                  className={
+                    selectedItem === 26 ? "active-gov" : "inactive-gov"
+                  }
                   class="st0"
                   d="M393.9,260.495l1.353,0.585l0.942-0.017l1.59-0.353l0.481-0.045l0.324,0.004l2.912,1.153l0.525,0.096
         l5.315-0.643l-0.177,4.963l0.077,1.645l0.162,0.766l0.478,1.566l0.316,0.739l0.355,0.633l0.443,0.578l0.486,0.438l4.363,2.533
@@ -696,8 +903,18 @@ const Map = ({ onClicker }) => {
                 />
               </a>
 
-              <a href="#" xlinkTitle="الأقصر" onClick={() => onClicker("16")}>
+              <a
+                href="#"
+                xlinkTitle="الأقصر"
+                onClick={() => {
+                  onClicker("16");
+                  setSelectedItem(27);
+                }}
+              >
                 <path
+                  className={
+                    selectedItem === 27 ? "active-gov" : "inactive-gov"
+                  }
                   class="st0"
                   d="M492.481,369.18l-0.709-0.075l-0.609-0.151l1.233-2.361l0.98,0.488l-0.051,0.45l-0.49,0.768L492.481,369.18z"
                 />
