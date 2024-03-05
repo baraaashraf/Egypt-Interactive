@@ -4,6 +4,7 @@ import Nav from "./components/Nav";
 import { useState } from "react";
 import { governorates } from "./areas";
 import EgyFlag from "./assets/Egypt.png";
+import Timeline from "./components/Timeline";
 
 function App() {
   const [info, setInfo] = useState({
@@ -24,10 +25,14 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <div className="hero">
+      <div className="hero-section">
         <Map onClicker={handleClick} />
         <Info data={info} />
       </div>
+      <div className="timeline-section">
+      <Timeline />
+      </div>
+      
     </div>
   );
 }

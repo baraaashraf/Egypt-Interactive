@@ -24,7 +24,7 @@ const Map = ({ onClicker }) => {
           >
             <g id="fullmap">
               <a
-                href="#"
+                
                 xlinkTitle="شمال سيناء"
                 onClick={() => {
                   onClicker("21");
@@ -61,7 +61,7 @@ const Map = ({ onClicker }) => {
                 />
               </a>
               <a
-                href="#"
+                
                 xlinkTitle="أسوان"
                 onClick={() => {
                   onClicker("2");
@@ -110,7 +110,7 @@ const Map = ({ onClicker }) => {
                 />
               </a>
               <a
-                href="#"
+                
                 xlinkTitle="الوادي الجديد"
                 onClick={() => {
                   onClicker("20");
@@ -155,7 +155,7 @@ const Map = ({ onClicker }) => {
                 />
               </a>
               <a
-                href="#"
+                
                 xlinkTitle="البحر الأحمر"
                 onClick={() => {
                   onClicker("25");
@@ -245,7 +245,7 @@ const Map = ({ onClicker }) => {
               </a>
 
               <a
-                href="#"
+                
                 xlinkTitle="مطروح"
                 onClick={() => {
                   onClicker("17");
@@ -278,7 +278,7 @@ const Map = ({ onClicker }) => {
               </a>
 
               <a
-                href="#"
+                
                 xlinkTitle="السويس"
                 onClick={() => {
                   onClicker("23");
@@ -304,7 +304,7 @@ const Map = ({ onClicker }) => {
               </a>
 
               <a
-                href="#"
+                
                 xlinkTitle="جنوب سيناء"
                 onClick={() => {
                   onClicker("27");
@@ -359,7 +359,7 @@ const Map = ({ onClicker }) => {
               </a>
 
               <a
-                href="#"
+                
                 xlinkTitle="بورسعيد"
                 onClick={() => {
                   onClicker("22");
@@ -377,7 +377,7 @@ const Map = ({ onClicker }) => {
               </a>
 
               <a
-                href="#"
+                
                 xlinkTitle="الدقهلية"
                 onClick={() => {
                   onClicker("11");
@@ -427,7 +427,7 @@ const Map = ({ onClicker }) => {
               </a>
 
               <a
-                href="#"
+                
                 xlinkTitle="الشرقية"
                 onClick={() => {
                   onClicker("26");
@@ -463,7 +463,7 @@ const Map = ({ onClicker }) => {
               </a>
 
               <a
-                href="#"
+                
                 xlinkTitle="الإسماعيلية"
                 onClick={() => {
                   onClicker("10");
@@ -487,7 +487,7 @@ const Map = ({ onClicker }) => {
               </a>
 
               <a
-                href="#"
+                
                 xlinkTitle="دمياط"
                 onClick={() => {
                   onClicker("7");
@@ -522,7 +522,7 @@ const Map = ({ onClicker }) => {
               </a>
 
               <a
-                href="#"
+                
                 xlinkTitle="كفر الشيخ"
                 onClick={() => {
                   onClicker("15");
@@ -562,7 +562,7 @@ const Map = ({ onClicker }) => {
               </a>
 
               <a
-                href="#"
+                
                 xlinkTitle="البحيرة"
                 onClick={() => {
                   onClicker("4");
@@ -601,7 +601,7 @@ const Map = ({ onClicker }) => {
               </a>
 
               <a
-                href="#"
+                
                 xlinkTitle="الإسكندرية"
                 onClick={() => {
                   onClicker("1");
@@ -625,7 +625,7 @@ const Map = ({ onClicker }) => {
               </a>
 
               <a
-                href="#"
+                
                 xlinkTitle="القاهرة"
                 onClick={() => {
                   onClicker("6");
@@ -646,7 +646,7 @@ const Map = ({ onClicker }) => {
               </a>
 
               <a
-                href="#"
+                
                 xlinkTitle="الجيزة"
                 onClick={() => {
                   onClicker("9");
@@ -673,7 +673,7 @@ const Map = ({ onClicker }) => {
               </a>
 
               <a
-                href="#"
+                
                 xlinkTitle="المنيا"
                 onClick={() => {
                   onClicker("19");
@@ -694,7 +694,7 @@ const Map = ({ onClicker }) => {
               </a>
 
               <a
-                href="#"
+                
                 xlinkTitle="الفيوم"
                 onClick={() => {
                   onClicker("12");
@@ -713,7 +713,7 @@ const Map = ({ onClicker }) => {
               </a>
 
               <a
-                href="#"
+                
                 xlinkTitle="بني سويف"
                 onClick={() => {
                   onClicker("5");
@@ -734,7 +734,7 @@ const Map = ({ onClicker }) => {
               </a>
 
               <a
-                href="#"
+                
                 xlinkTitle="المنوفية"
                 onClick={() => {
                   onClicker("18");
@@ -766,7 +766,7 @@ const Map = ({ onClicker }) => {
               </a>
 
               <a
-                href="#"
+                
                 xlinkTitle="القليوبية"
                 onClick={() => {
                   onClicker("23");
@@ -793,7 +793,7 @@ const Map = ({ onClicker }) => {
               </a>
 
               <a
-                href="#"
+                
                 xlinkTitle="الغربية"
                 onClick={() => {
                   onClicker("8");
@@ -828,7 +828,7 @@ const Map = ({ onClicker }) => {
               </a>
 
               <a
-                href="#"
+                
                 xlinkTitle="سوهاج"
                 onClick={() => {
                   onClicker("14");
@@ -851,7 +851,7 @@ const Map = ({ onClicker }) => {
               </a>
 
               <a
-                href="#"
+                
                 xlinkTitle="قنا"
                 onClick={() => {
                   onClicker("24");
@@ -880,7 +880,7 @@ const Map = ({ onClicker }) => {
               </a>
 
               <a
-                href="#"
+                
                 xlinkTitle="أسيوط"
                 onClick={() => {
                   onClicker("3");
@@ -904,7 +904,7 @@ const Map = ({ onClicker }) => {
               </a>
 
               <a
-                href="#"
+                
                 xlinkTitle="الأقصر"
                 onClick={() => {
                   onClicker("16");

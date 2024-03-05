@@ -9,7 +9,7 @@ const Nav = () => {
             <a href="">لغات</a>
           </li>
           <li className="nav-li">
-            <a href="">عواصم</a>
+            <a href="#capitals">عواصم</a>
           </li>
           <li className="nav-li">
             <a href="">معالم</a>

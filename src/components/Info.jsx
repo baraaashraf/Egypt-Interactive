@@ -8,8 +8,9 @@ const Info = ({ data }) => {
         <img src={image} alt="علم الدوله" className="flag-card" />
         <h1>المحافظة : {title} </h1>
         <h4>العاصمة : {capital} </h4>
-        <p>المساحة : {area} كم²</p>
         <p>عدد السكان : {population} نسمة</p>
+        <p>المساحة : {area} كم²</p>
+        
       </div>
     </div>
   );
